@@ -1,0 +1,1 @@
+{"mappings":"AAAA,IAAMA,WAAaC,SAASC,eAAe,cAAcC,SACnDC,QAAQC,IAAIL","sources":["src/partials/js/task-01.js"],"sourcesContent":["const categories = document.getElementById('categories').children;\n      console.log(categories);"],"names":["categories","document","getElementById","children","console","log"],"version":3,"file":"task-01.51364b9f.js.map"}
