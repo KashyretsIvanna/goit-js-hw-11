@@ -1,12 +1,48 @@
 <article class="example" id="uk">
-  <h1>HTML-partials</h1>
+  <h1 id="root">HTML-partials</h1>
 
   <!--
     ❗️❗️❗️ The path to images from the HTML partial
     is the same as from the index.html file
   -->
   <img src="images/logo.png" alt="" width="320" />
+  <script>
+    class Car {
+      // Change code below this line
+      static MAX_PRICE = 50000;
+      #price;
 
+      constructor({ price }) {
+        this.#price = price;
+      }
+
+      get price() {
+        return this.#price;
+      }
+
+      set price(newPrice) {
+        if (newPrice > this.MAX_PRICE) {
+          return
+        }
+        if (newPrice <= this.MAX_PRICE) {
+          this.#price = newPrice;
+        }
+        
+
+       
+      }
+      // Change code above this line
+    }
+
+    const audi = new Car({ price: 35000 });
+    console.log(audi.price); // 35000
+
+    audi.price = 49000;
+    console.log(audi.price); // 49000
+
+    audi.price = 51000;
+    console.log(audi.price); // 49000
+  </script>
   <p>
     The
     <a
