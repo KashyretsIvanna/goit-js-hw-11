@@ -1,0 +1,2 @@
+document.getElementById("validation-input").addEventListener("blur",(function(){var t=document.querySelector("input[data-length='6']");t.value.length>t.dataset.length?(document.getElementById("validation-input").classList.add("invalid"),document.getElementById("validation-input").classList.remove("valid")):(document.getElementById("validation-input").classList.add("valid"),document.getElementById("validation-input").classList.remove("invalid")),console.log(t.dataset.length)}));
+//# sourceMappingURL=task-06.bf131813.js.map
