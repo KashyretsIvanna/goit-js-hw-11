@@ -1,4 +1,4 @@
-<!DOCTYPE http>
+<!DOCTYPE html>
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
@@ -43,6 +43,22 @@
       </li>
     </ul>
 
-    <script type="script" src="js/task-01.js"></script>
+    <script>
+      const categories = [...document.getElementById('categories').children];
+      console.log('Number of categories: ', categories.length);
+
+      [...document.querySelectorAll('li.item')].map(el =>
+        [...el.querySelectorAll('h2')].map(ch =>
+          [...el.querySelectorAll('ul')]
+            .map(ul => [...ul.children].length)
+            .map(l => {
+              console.log('Category: ', ch.innerText);
+              console.log('Elements: ', l);
+            })
+        )
+      );
+    </script>
+
+    <script src="js/task-01.js" type="script"></script>
   </body>
 </html>
